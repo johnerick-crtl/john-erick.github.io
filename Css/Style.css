@@ -245,3 +245,77 @@ footer p {
 .social-links a:hover {
     color: var(--cor-secundaria);
 }
+
+/* Design para Celulares*/
+@media (max-width: 768px) {
+    /* Ajustes no Header */
+    #LogoTipo {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header-logo {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustes em todas as seções */
+    section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    /* Ajustes no texto */
+    .texto-container {
+        padding: 20px;
+    }
+
+    .texto-container p {
+        font-size: 1rem;
+    }
+
+    /* Ajustes nos cards do portfólio */
+    .portfolio-galeria {
+        gap: 20px;
+    }
+    
+    .projeto-card {
+        padding: 20px;
+    }
+
+    .projeto-card h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustes no formulário */
+    .contato-form {
+        gap: 15px;
+    }
+    
+    .contato-form input,
+    .contato-form textarea,
+    .contato-form button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Ajustes no Rodapé */
+    footer {
+        padding: 20px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}
