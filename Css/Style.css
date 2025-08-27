@@ -1,0 +1,247 @@
+/*Formatação Generica*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1E3A8A;
+    --cor-secundaria: #60A5FA;
+    --cor-terciaria: #E5E7EB;
+    --cor-quaternaria: #e5e5e5;
+    --cor-branca: #FFFFFF;
+    --cor-texto: #374151;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-texto);
+}
+
+/*Formatação do Header*/
+#LogoTipo {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.header-logo {
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+}
+
+.destaque-logo {
+    color: var(--cor-terciaria);
+}
+
+/*Formatação dos links*/
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: var(--cor-secundaria);
+}
+
+/*Formatação das seções */
+section {
+    padding: 80px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Formatação do texto */
+.texto-container {
+    background-color: var(--cor-branca);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.texto-container p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para o botão do LinkedIn */
+.button-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Estilos para a galeria de projetos */
+.portfolio-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.projeto-card {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projeto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-card h3 {
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-projeto {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-projeto:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Estilos para a seção de contato*/
+#contato {
+    background-color: var(--cor-quaternaria); /* Garante que o fundo seja o mesmo da página */
+    padding: 80px 50px;
+}
+
+.contato-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contato-form label {
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--cor-texto);
+    border-radius: 8px;
+    background-color: var(--cor-branca);
+    color: var(--cor-texto); /* Corrigido para texto visível */
+    font-size: 1rem;
+    outline: none;
+}
+
+.contato-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contato-form button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--cor-secundaria);
+}

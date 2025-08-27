@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Orçamento</title>
+    <link rel="stylesheet" href="../Css/formulario.css">
+</head>
+<body>
+    <div class="btn-voltar-container">
+        <a href="../index.html" class="btn-voltar">Voltar ao Portfólio</a>
+    </div>
+
+    <div class="container">
+        <h1>Formulário de Orçamento</h1>
+        <form method="get" action="#">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="Email">
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de Serviço:</label>
+                <div class="radio-options">
+                    <input type="radio" id="site" name="servico" value="site" checked>
+                    <label for="site">Desenvolvimento de Site</label>
+                    <input type="radio" id="app" name="servico" value="app">
+                    <label for="app">Criação de App</label>
+                    <input type="radio" id="consultoria" name="servico" value="consultoria">
+                    <label for="consultoria">Consultoria</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="prazo">Prazo de Entrega:</label>
+                <select id="prazo" name="prazo">
+                    <option>Até 15 dias</option>
+                    <option>Até 30 dias</option>
+                    <option>Mais de 30 dias</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Recursos Opcionais:</label>
+                <div class="checkbox-options">
+                    <input type="checkbox" id="backend" name="recursos" value="backend">
+                    <label for="backend">Backend</label>
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    <label for="design">Design UI/UX</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dataEntrega">Data de Contato Preferencial:</label>
+                <input type="date" id="dataEntrega" name="dataEntrega">
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Detalhes do Projeto:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+
+            <input class="submit-button" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
